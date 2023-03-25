@@ -1,0 +1,35 @@
+.add-to-cart-btn {
+    font-family: $main-font;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $grey-1;
+    background-color: $white;
+    padding: 16px 20px;
+    border: 2px solid $yellow;
+    border-radius: 12px;
+    cursor: pointer;
+    &:hover {
+        background: $yellow;
+        box-shadow: 0px 4px 16px rgba(255, 205, 78, 0.39);
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+@media only screen and (max-width: 1152px) and (min-width: 991px)  {
+    .add-to-cart-btn {
+        padding: 14px 7px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: $breakpoint__xl) {
+    .add-to-cart-btn {
+        padding: 16px 15px;
+    }
+}

@@ -1,0 +1,25 @@
+.choose-category {
+    display: none;
+    padding: 15px;
+    background-color: $grey-6;
+    border-radius: 10px;
+    align-items: center;
+    &__text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 110%;
+        color: $grey-2;
+        margin-right: 40px;
+    }
+    &__arrow {        
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: $breakpoint__md) {
+    .choose-category {
+            display: flex;        
+    }
+}

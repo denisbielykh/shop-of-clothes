@@ -1,0 +1,25 @@
+.list-of-products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin: 0 -15px;
+    &__box {
+        width: 25%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: $breakpoint__xl) {
+    .list-of-products {
+        &__box {
+            width: 50%;
+        }
+    }
+}
+@media (max-width: $breakpoint__sm) {
+    .list-of-products {
+        &__box {
+            width: 100%;
+        }
+    }
+}

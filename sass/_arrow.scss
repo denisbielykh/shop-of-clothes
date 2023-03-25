@@ -1,0 +1,51 @@
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $white-op-05;
+    background-image: url(../img/technic-img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+    &__left {
+        transform: translateY(-50%) rotate(180deg);
+        left: 22px;
+    }
+    &__right {
+        right: 22px;
+    }
+}
+
+@media (max-width: $breakpoint__xl) {
+    .arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: $breakpoint__xs) {
+    .arrow {
+        width: 50px;
+        height: 50px;
+        top: 100%;
+        transform: translateY(-110%);
+        &__left {
+            left: 15px;
+            transform: translateY(-110%) rotate(180deg);
+        }
+        &__right {
+            right: 15px;
+        }
+    }
+}

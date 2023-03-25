@@ -1,0 +1,10 @@
+.img-box {
+    max-width: 270px;
+}
+
+@media (max-width: $breakpoint__md) {
+    .img-box {
+        max-width: 174px;        
+        order: -1;
+    }
+}

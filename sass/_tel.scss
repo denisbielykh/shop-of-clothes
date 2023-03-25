@@ -1,0 +1,28 @@
+.tel {
+    line-height: 19px;
+    text-align: center;
+    color: $grey-1;
+    margin-right: 22px;
+    &:hover {
+        color: $purple;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+    &__ico {
+        display: none;
+        max-height: 30px;
+        
+    }
+}
+
+@media (max-width: $breakpoint__md) {
+    .tel {
+        &__number {
+            display: none;
+        }
+        &__ico {
+            display: block;
+        }
+    }
+}

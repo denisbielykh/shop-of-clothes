@@ -1,0 +1,42 @@
+.cart {
+    display: flex;
+    align-items: center;       
+    &:hover .cart__text {
+        color: $purple;
+    }
+    &:hover .cart__svg path {
+        fill: $purple;
+    }
+    &__text {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $grey-1;
+        padding: 10px;
+    }
+    &__svg {
+        margin-right: 5px;
+    }
+    &__amount {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        color: $white;
+        background-color: $red;
+        padding: 3px 5px;
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: $breakpoint__md) {
+    .cart {
+        &__text {
+            display: none;
+        }
+    }
+}

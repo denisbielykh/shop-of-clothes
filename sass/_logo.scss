@@ -1,0 +1,18 @@
+.logo {
+    display: block;
+    margin-right: 54px;
+    font-size: 0;
+    &__img {
+        max-width: 70px;
+    }
+}
+@media (max-width: $breakpoint__xxl) {
+    .logo {
+        margin-right: 40px;
+    }
+}
+@media (max-width: $breakpoint__md) {
+    .logo {
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,33 @@
+.burger {
+    display: none;
+    position: relative;    
+    width: 40px;
+    height: 40px;
+    margin-left: 14px;
+    &:active {
+        opacity: 0.5;
+    }
+    &__line {
+        width: 20px;
+        height: 2px;
+        border-radius: 50px;
+        background-color: $grey-1;
+        position: absolute;
+        left: 10px;
+        &_first {
+            top: 13px;
+        }
+        &_second {
+            top: 19px;
+        }
+        &_third {
+            bottom: 13px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint__md) {
+    .burger {
+        display: block;
+    }
+}

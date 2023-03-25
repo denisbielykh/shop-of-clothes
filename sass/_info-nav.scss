@@ -1,0 +1,34 @@
+.info-nav {
+    display: flex;
+    margin-right: auto;
+    &__item {
+        margin: 0 18px;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $grey-1;
+        &:hover {
+            color: $purple;
+        }
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}
+@media (max-width: $breakpoint__xl) {
+    .info-nav {
+        &__item {
+            margin: 0 10px;
+        }
+    }
+}
+@media (max-width: $breakpoint__md) {
+    .info-nav {
+        display: none;
+    }
+}
